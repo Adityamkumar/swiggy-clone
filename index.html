@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css">
+    <script src="app.js" defer></script>
+</head>
+
+     <div class="main">
+        <nav>
+            <div class="left-menu">
+                <div class="logo"><svg class="_8pSp-" viewBox="0 0 559 825" height="49" width="34" fill="#fc8019"><path fill-rule="evenodd" clip-rule="evenodd" d="M542.92 388.542C546.805 366.526 542.355 349.598 530.881 340.76C513.621 327.466 487.698 320.236 425.954 320.236C380.271 320.236 331.225 320.286 310.268 320.275C308.322 319.894 301.285 317.604 301.02 309.112L300.734 174.289C300.727 165.779 307.531 158.857 315.943 158.839C324.369 158.825 331.204 165.723 331.211 174.226C331.211 174.226 331.421 247.414 331.441 273.424C331.441 275.936 332.892 281.8 338.549 283.328C375.43 293.267 561.865 285.999 558.967 251.804C543.147 109.96 424.476 0 280.394 0C235.021 0 192.065 10.9162 154.026 30.2754C62.9934 77.5955 -1.65904 173.107 0.0324268 283.43C1.23215 361.622 52.2203 500.605 83.434 521.234C97.8202 530.749 116.765 527.228 201.484 527.228C239.903 527.228 275.679 527.355 293.26 527.436C295.087 527.782 304.671 530.001 304.671 538.907L304.894 641.393C304.915 649.907 298.104 656.826 289.678 656.829C281.266 656.843 274.434 649.953 274.42 641.446C274.42 641.446 275.17 600.322 275.17 584.985C275.17 581.435 275.424 575.339 265.178 570.727C231.432 555.553 121.849 564.712 115.701 581.457C113.347 587.899 125.599 612.801 144.459 644.731C170.102 685.624 211.889 747.245 245.601 792.625C261.047 813.417 268.77 823.813 280.467 824.101C292.165 824.389 300.514 814.236 317.213 793.928C383.012 713.909 516.552 537.663 542.92 388.542Z" fill="url(#paint0_linear_19447_66107)"></path><defs><linearGradient id="paint0_linear_19447_66107" x1="445.629" y1="63.8626" x2="160.773" y2="537.598" gradientUnits="userSpaceOnUse"><stop stop-color="#FF993A"></stop><stop offset="1" stop-color="#F15700"></stop></linearGradient></defs></svg></div>
+                <p></p>
+                <span></span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="right-menu">
+                <ul>
+                    <li><i class="ri-shopping-bag-3-fill"></i> Swiggy Corporate</li>
+                    <li><i class="ri-search-2-line"></i><a href="search.html">Search</a></li>
+                    <li><i class="ri-discount-percent-line"></i> Offers <sup>New</sup></li>
+                    <li><i class="ri-hand-heart-fill"></i> Help</li>
+                    <li id="signup"><i class="ri-user-3-fill"></i> Sign Up</li>
+                    <li><i class="ri-shopping-cart-fill"></i> Cart <sup>(0)</sup></li>
+                    <li id="account"><i class="ri-account-circle-fill"></i>Account</li>
+                    <span class="menu"><i class="ri-menu-2-fill"></i></span>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="sideNav">
+            <div class="side-menu">
+                <ul>
+                    <div class="flex">
+                        <li>Swiggy Corporate</li>
+                        <i class="ri-close-large-line"></i>
+                    </div>
+                    <li><a href="search.html">Search</a></li>
+                    <li>Offers <sup>New</sup></li>
+                    <li>Help</li>
+                    <li id="signupBox">Sign Up</li>
+                    <li>Cart <sup>(0)</sup></li>
+                    <li id="account">Account</li>
+                </ul>
+            </div>
+        </div>
+        <div class="layer"><div class="locationIcon"><img src="loader.gif" alt=""></div></div>
+        <div class="side-nav">
+            <div class="content">
+                <i class="ri-close-large-fill"></i><br>
+                <input type="text" placeholder="Search for area,street name... ">
+                <div class="userlocation">
+                    <div id="loc-icon"><i class="ri-map-pin-line"></i></div> 
+                   <div id="text"> <p>Get Current Location</p> <p>Using GPS</p></div>
+                   </div>
+            </div>
+     </div>
+     <div class="account">
+        <div class="userAccount">
+            <div class="unseravtar"><img src="useravtar.jpg" alt=""></div>
+            <p id="username"></p>
+            <p id="useremail"></p>
+       </div>
+     </div>
+    
+     <div class="food-section">
+       
+        <div class="tooltip"></div>
+        <div class="sign-up">
+            <div class="top-text">
+                <svg class="_8pSp-" viewBox="0 0 559 825" height="49" width="34" fill="#fc8019"><path fill-rule="evenodd" clip-rule="evenodd" d="M542.92 388.542C546.805 366.526 542.355 349.598 530.881 340.76C513.621 327.466 487.698 320.236 425.954 320.236C380.271 320.236 331.225 320.286 310.268 320.275C308.322 319.894 301.285 317.604 301.02 309.112L300.734 174.289C300.727 165.779 307.531 158.857 315.943 158.839C324.369 158.825 331.204 165.723 331.211 174.226C331.211 174.226 331.421 247.414 331.441 273.424C331.441 275.936 332.892 281.8 338.549 283.328C375.43 293.267 561.865 285.999 558.967 251.804C543.147 109.96 424.476 0 280.394 0C235.021 0 192.065 10.9162 154.026 30.2754C62.9934 77.5955 -1.65904 173.107 0.0324268 283.43C1.23215 361.622 52.2203 500.605 83.434 521.234C97.8202 530.749 116.765 527.228 201.484 527.228C239.903 527.228 275.679 527.355 293.26 527.436C295.087 527.782 304.671 530.001 304.671 538.907L304.894 641.393C304.915 649.907 298.104 656.826 289.678 656.829C281.266 656.843 274.434 649.953 274.42 641.446C274.42 641.446 275.17 600.322 275.17 584.985C275.17 581.435 275.424 575.339 265.178 570.727C231.432 555.553 121.849 564.712 115.701 581.457C113.347 587.899 125.599 612.801 144.459 644.731C170.102 685.624 211.889 747.245 245.601 792.625C261.047 813.417 268.77 823.813 280.467 824.101C292.165 824.389 300.514 814.236 317.213 793.928C383.012 713.909 516.552 537.663 542.92 388.542Z" fill="url(#paint0_linear_19447_66107)"></path><defs><linearGradient id="paint0_linear_19447_66107" x1="445.629" y1="63.8626" x2="160.773" y2="537.598" gradientUnits="userSpaceOnUse"><stop stop-color="#FF993A"></stop><stop offset="1" stop-color="#F15700"></stop></linearGradient></defs></svg> <h3>Sign Up</h3>
+                <i class="ri-close-large-fill"></i>
+            </div>
+            <form>
+                <input type="text" placeholder="enter your name" id="name" required>
+                <input type="email" placeholder="enter your email" autocomplete="email" id="email" required>
+                <input type="password" placeholder="create a new password" autocomplete="new-password"  required>
+                <button type="submit">SignUp</button>
+            </form>
+        </div>
+        <div class="mind"><h3>What's on your mind?</h3></div>
+        <div class="arrow"><div class="first"><i class="ri-arrow-left-line"></i></div> <div class="second"><i class="ri-arrow-right-line"></i></div></div>
+     </div>
+     <div class="food-item">
+        <div class="food-img">
+            
+        </div>
+        </div>
+     <hr>
+     <div class="restaurant">
+        <div class="resto"><h3>Top restaurant chains in Chennai</h3></div>
+        <div class="arrows"><div class="arrow-left"><i class="ri-arrow-left-line"></i></div> <div class="arrow-right"><i class="ri-arrow-right-line"></i></div></div>
+    </div>   
+    
+         <div class="foodcard">
+            <div class="cardwrap"></div>
+         </div>
+      <hr>
+      <div class="onlineFood">
+        <h3>Restaurants with online food delivery in Chennai</h3>
+        <div class="filter-box">
+            <div class="innerBox">
+                <div class="box"><p>Filter</p><i class="ri-equalizer-2-line"></i></div>
+                <div class="box"><p>Sort By</p><i class="ri-arrow-drop-down-line"></i></div>
+                <div class="box"><p>Fast Delivery</p></div>
+                <div class="box"><p>New On Swiggy</p></div>
+                <div class="box"><p>Rating 4.0+</p></div>
+                <div class="box"><p>Pure Veg</p></div>
+                <div class="box"><p>Offers</p></div>
+                <div class="box"><p>Rs. 300-Rs. 600</p></div>
+                <div class="box"><p>Less than Rs. 300</p></div>
+                <div class="box"><p><a href="search.html">Search for restaurant and food</a></p><i class="ri-search-line"></i></div>
+            </div>
+        </div>
+      </div>   
+      <div class="junkfood">
+        <div class="junkstore">
+
+        </div>
+      </div>
+      <div class="best-place">
+        <h2>Best Places to Eat Across Cities</h2>
+          <div class="cities">
+                <div class="cityrow">
+                    <div>Best Restaurants in Bangalore</div>
+                    <div>Best Restaurants in Pune</div>
+                    <div>Best Restaurants in Mumbai</div>
+               </div>
+               <div class="cityrow">
+                    <div>Best Restaurants in Delhi</div>
+                    <div>Best Restaurants in Hyderabad</div>
+                    <div>Best Restaurants in Kolkata</div>
+               </div>
+                
+               <div class="cityrow">
+                    <div>Best Restaurants in Chennai</div>
+                    <div>Best Restaurants in Chandigarh</div>
+                    <div>Best Restaurants in Ahmedabad</div>
+               </div>
+                
+               <div class="cityrow">
+                    <div>Best Restaurants in Jaipur</div>
+                    <div>Best Restaurants in Nagpur</div>
+                    <div>Best Restaurants in Bhubaneswar</div>
+               </div>
+                
+            </div>
+      </div>
+     
+      <div class="best-place">
+        <h2>Best Cuisines Near Me</h2>
+          <div class="cities">
+                <div class="cityrow">
+                    <div>Chinese Restaurant Near Me</div>
+                    <div>Korean Restaurant Near Me</div>
+                    <div>Punjabi Restaurant Near Me</div>
+               </div>
+               <div class="cityrow">
+                    <div>South Indian Restaurant Near Me</div>
+                    <div>North Indian Restaurant Near Me</div>
+                    <div>Italian Restaurant Near Me</div>
+               </div>
+                
+               <div class="cityrow">
+                    <div>Indian Restaurant Near Me</div>
+                    <div>Seafood Restaurant Near Me</div>
+                    <div>Andhra Restaurant Near Me</div>
+               </div>
+                
+               <div class="cityrow">
+                    <div>Kerala Restaurant Near Me</div>
+                    <div>Bengali Restaurant Near Me</div>
+                    <div>Biryani Restaurant Near Me</div>
+               </div>
+                
+            </div>
+      </div>
+     
+     <div class="l-box">
+        <h2>Explore Every Restaurants Near Me</h2>
+         <div class="boxes">
+             <div class="one">Explore Restaurants Near Me</div>
+             <div class="two">Explore Top Rated Restaurants Near Me</div>
+         </div>
+     </div>
+     <div class="download">
+        <div class="h1"><h2>For better experience,download the Swiggy app now</h2></div>
+         <div class="play">
+            <img src="play_store.webp" alt="">
+            <img src="app_store.webp" alt="">
+         </div>
+     </div>
+
+     <footer>
+        <div class="contents">
+        <div class="col1">
+            <div class="swiggy"><svg width="21" height="32" viewBox="0 0 21 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_b_674_19294)"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.3819 14.7977C20.5245 13.9563 20.3574 13.3121 19.9261 12.9756C19.2787 12.4711 18.3021 12.1959 15.9859 12.204C14.2724 12.2082 12.4327 12.2167 11.6469 12.2205C11.5739 12.2082 11.3093 12.1181 11.297 11.7938L11.2683 6.64781C11.2683 6.3236 11.5207 6.05694 11.8385 6.05694C12.1559 6.05694 12.412 6.31936 12.412 6.64358C12.412 6.64358 12.4285 9.43839 12.4327 10.4314C12.4327 10.5257 12.4897 10.7513 12.7011 10.8089C14.085 11.1822 21.0778 10.883 20.9639 9.57764C20.3536 4.16496 15.8884 -0.0164585 10.4829 4.87055e-05C8.78164 0.00385807 7.16965 0.426698 5.745 1.16952C2.33815 2.98744 -0.0755529 6.63977 0.00180748 10.8542C0.0546894 13.8374 1.98811 19.1396 3.16037 19.923C3.70173 20.2845 4.40996 20.1491 7.58886 20.1368C9.0298 20.1325 10.3732 20.1325 11.0324 20.1325C11.1016 20.1448 11.4599 20.2312 11.4637 20.5677L11.484 24.4782C11.484 24.8024 11.232 25.0691 10.9142 25.0691C10.5968 25.0691 10.3402 24.8109 10.3402 24.4824C10.3402 24.4824 10.3647 22.9108 10.3609 22.328C10.3609 22.1926 10.3689 21.9585 9.98235 21.7862C8.71622 21.2119 4.60532 21.5729 4.37737 22.2129C4.29191 22.4592 4.75185 23.4073 5.46418 24.6259C7.83331 28.4425 10.1571 31.4176 10.5318 31.8937C10.5563 31.9141 10.5766 31.9348 10.5968 31.9471C10.9104 31.5611 19.1078 22.2747 20.3819 14.7977Z" fill="white"></path></g><defs><filter id="filter0_b_674_19294" x="-9.26002" y="-9.26002" width="39.4853" height="50.4673" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feGaussianBlur in="BackgroundImageFix" stdDeviation="4.63001"></feGaussianBlur><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_674_19294"></feComposite><feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_674_19294" result="shape"></feBlend></filter></defs></svg> <span>Swiggy</span></div>
+             <span>&copy; 2024 Bundl Technologies <br>Pvt. Ltd</span>
+        </div>
+        <div class="col2">
+            <p>Company</p>
+            <ul class="list">
+                <li>About</li>
+                <li>Careers</li>
+                <li>Team</li>
+                <li>Swiggy One</li>
+                <li>Swiggy Instamart</li>
+                <li>Swiggy Genie</li>
+            </ul>
+        </div>
+        <div class="col2">
+            <p>Contact Us</p>
+            <div class="list">
+                <li>Help & Support</li>
+                <li>Partner With us</li>
+                <li>Ride With us</li>
+                <div class="col3">
+                    <p>Legal</p>
+                    <ul class="list">
+                        <li>Term & Conditions</li>
+                        <li>Cooie Policy</li>
+                        <li>Privacy Policy</li>
+                        <li>Investor Relations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col4">
+            <p>We deliver to:</p>
+            <ul class="list">
+                <li>Banglore</li>
+                <li>Gurgaon</li>
+                <li>Hyderabad</li>
+                <li>Delhi</li>
+                <li>Mumbai</li>
+                <li>Pune</li>
+            </ul>
+        </div>
+    </div>
+     </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
