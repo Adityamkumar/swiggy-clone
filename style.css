@@ -76,6 +76,7 @@ nav .left-menu{
     align-items: center;
     cursor: pointer;
 }
+
 .left-menu .logo{
     position: relative;
     left: -5%;
@@ -1311,6 +1312,9 @@ input::placeholder{
     }
     hr{
         width: 100%;
+        margin-left: 0vw;
+        opacity: 0.5;
+        height: 1px;
     }
     .mind h3 {
         font-size: 18px;
@@ -1349,15 +1353,15 @@ input::placeholder{
         font-size: 10px;
         font-weight: 400;
     }
-    .foodcard{
+    /* .foodcard{
         margin-left: 33px;
         padding: 1vw 0vw;
-    }
+    } */
 
-.food-item {
+/* .food-item {
     padding: 1vw 0vw;
     margin-left: 30px;
-}
+} */
     .menu{
         margin-right: 33px;
     }
@@ -1452,7 +1456,6 @@ input::placeholder{
         margin-left: 1vw;
     }
     .cities {
-        justify-content:unset;
         margin-left:1.9vw;
     }
     .onlineFood h3 {
@@ -1471,15 +1474,15 @@ input::placeholder{
         font-size: 10px;
         font-weight: 400;
     }
-    .foodcard{
+    /* .foodcard{
         margin-left: 33px;
         padding: 1vw 0vw;
-    }
+    } */
 
-.food-item {
+/* .food-item {
     padding: 1vw 0vw;
     margin-left: 30px;
-}
+} */
     .menu{
         margin-right:11px;
     }

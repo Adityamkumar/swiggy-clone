@@ -148,10 +148,9 @@ const getUserCurrentAddress=async(latitude,longitude)=>{
     const request=await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apikey}`)
     const response=await request.json();
     const fullUserAddress=response.results[0].components;
-    console.log(fullUserAddress);
-    const{suburb,postcode,state,_normalized_city}=fullUserAddress
-    userAddress.textContent=`${postcode},${state},${_normalized_city}`   
-    pInLeftMenu.textContent=`${suburb}`
+    const{road,postcode,state}=fullUserAddress
+    userAddress.textContent=`${postcode},${state}`   
+    pInLeftMenu.textContent=`${road}`
 }
 userlocation.addEventListener('click',()=>{
     if(navigator.geolocation){
@@ -229,13 +228,12 @@ const findFood=async(searchValue)=>{
     const sendingRequest=await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`)
     const gettingResponse=await sendingRequest.json();
     const data=gettingResponse.meals
-    data.forEach((meals)=>{
-        console.log(meals);
+    data.forEach((foods)=>{
         const meal=document.createElement('div');
         meal.classList.add('meals');
         meal.innerHTML=`
-        <div class="mealimg"><img src=${meals.strMealThumb} alt=""></div>
-        <div class="mealname"><p>${meals.strMeal}</p><span>Dish</span></div>
+        <div class="mealimg"><img src=${foods.strMealThumb} alt=""></div>
+        <div class="mealname"><p>${foods.strMeal}</p><span>Dish</span></div>
         `
         foodContainer.append(meal)
     })    

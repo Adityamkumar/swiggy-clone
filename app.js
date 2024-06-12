@@ -295,7 +295,6 @@ const getUserCurrentAddress=async(latitude,longitude)=>{
     const request=await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apikey}`)
     const response=await request.json();
     const fullUserAddress=response.results[0].components;
-    console.log(fullUserAddress);
     const{road,postcode,state}=fullUserAddress
     userAddress.textContent=`${postcode},${state}`   
     pInLeftMenu.textContent=`${road}`
